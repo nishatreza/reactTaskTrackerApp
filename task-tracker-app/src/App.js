@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { useState, useEffect } from 'react'
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -129,6 +130,8 @@ const App = () => {
       {tasks.length > 0 ?
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         : "No Tasks To Show"}
+
+      <Footer />
 
     </div>
   );
